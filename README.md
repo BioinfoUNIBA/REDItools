@@ -7,7 +7,6 @@
   <body>
   <h3><a>Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">REDItools: python scripts for RNA editing detection by RNA-Seq data</a></li>
 <li><a class="reference internal" href="#introduction">Introduction</a></li>
 <li><a class="reference internal" href="#publications">Publications</a></li>
 <li><a class="reference internal" href="#download">Download</a><ul>
@@ -60,7 +59,7 @@
 </ul>
 </div>
 <div class="section" id="reditools-python-scripts-for-rna-editing-detection-by-rna-seq-data">
-<h1>REDItools: python scripts for RNA editing detection by RNA-Seq data<a class="headerlink" href="#reditools-python-scripts-for-rna-editing-detection-by-rna-seq-data" title="Permalink to this headline"></a></h1>
+<h1>REDItools: python scripts for RNA editing detection by RNA-Seq data<a class="headerlink" title="Permalink to this headline"></a></h1>
 </div>
 <div class="section" id="introduction">
 <h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline"></a></h1>
