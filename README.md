@@ -1561,7 +1561,7 @@ If REDItools have been correctly installed in your path, you can call all REDIto
 </pre></div>
 </div>
 <p>If everything is ok, REDItoolDnaRna.py can be launched by:</p>
-<div class="highlight-python"><pre>[epicardi@srv00 sample]$ REDItoolDnaRna.py -i rna.bam -j dna.bam -f reference.fa -o reditool-test -c 10,1 -Q 33,64 -q 25,25 -m 20,20 -s 2 -g 1 -u -a 6-0 -v 2 -n0.0 -N0.0 -V
+<div class="highlight-python"><pre>[epicardi@srv00 sample]$ REDItoolDnaRna.py -i rna.bam -j dna.bam -f reference.fa -o reditool-test -c 10,1 -q 25,25 -m 20,20 -s 2 -g 1 -u -a 6-0 -v 2 -n0.0 -N0.0 -V
 Script time --&gt; START: 06/02/2013 20:44:48
 Analysis ID: 891206177
 Analysis on 1 regions.
