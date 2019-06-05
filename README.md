@@ -118,19 +118,17 @@ platform in the standard BAM format and implement a variety of filters.</p>
 </div>
 <div class="section" id="prerequisites">
 <h1>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline"></a></h1>
-<p>REDItools require python 2.6 or 2.7 available at python <a class="reference external" href="http://www.python.org">web-site</a>.
-All scripts have not been tested on python 3.
-In addition, two external modules need to be installed to run and use REDItools, even though
-the second module is optional:</p>
+<p>REDItools require python 2.7 (available at the official python <a class="reference external" href="http://www.python.org">web-site</a>) while python 3 is not yet supported.
+In addition, REDItools need two external modules:</p>
 <ul class="simple">
-<li>pysam module version 0.6 or 0.7 available on <a class="reference external" href="http://code.google.com/p/pysam/">Google Code</a></li>
-<li>fisher module version 0.1.4 (optional) available at python <a class="reference external" href="http://pypi.python.org/pypi/fisher/">web site</a></li>
+<li>pysam (mandatory) version >= 0.15 available <a class="reference external" href="https://pysam.readthedocs.io/en/latest/installation.html">here</a></li>
+<li>fisher (optional) version 0.1.4 (optional) available at python <a class="reference external" href="http://pypi.python.org/pypi/fisher/">web site</a></li>
 </ul>
 <p>To perform Blat correction and format alignment exchange (SAM to BAM and vice versa) the
 following packages should be installed or already present in your path:</p>
 <ul class="simple">
-<li>Blat package including gfServer and gfClient executables, available from <a class="reference external" href="http://hgdownload.cse.ucsc.edu/admin/exe/">UCSC Genome Browser</a></li>
-<li>Samtools and tabix from <a class="reference external" href="http://samtools.sourceforge.net/">sourceforge</a></li>
+<li><a class="reference external" href="http://hgdownload.cse.ucsc.edu/admin/exe/">Blat</a> package including gfServer and gfClient executables or <a class="reference external" href="http://hgdownload.cse.ucsc.edu/admin/exe/">pblat</a></li>  
+<li><a class="reference external" href="http://www.htslib.org/">Samtools</a> and <a class="reference external" href="http://www.htslib.org/">tabix</a></li>
 </ul>
 </div>
 <div class="section" id="installation">
@@ -145,10 +143,18 @@ from the above link and follow instructions inside.</p>
 <div class="highlight-python"><pre>python REDItoolscript.py</pre>
 </div>
 <p>Alternatively you can easily install REDItools by the following commands:</p>
-<div class="highlight-python"><pre>gunzip reditools-1.0.2.tar.gz
+<div class="highlight-python">
+<pre>
+git clone https://github.com/BioinfoUNIBA/REDItools
+cd REDItools
+python setup.py install
+</pre>
+<p>For old packages use the following lines:</p>
+<pre>gunzip reditools-1.0.2.tar.gz
 tar –xvf reditools-1.0.2.tar
 cd reditools-1.0.2
-python setup.py install</pre>
+python setup.py install
+</pre>
 </div>
 <p>To install scripts in a specific location the &#8211;prefix option can be used:</p>
 <div class="highlight-python"><pre>python setup.py install --prefix=/my/path</pre>
