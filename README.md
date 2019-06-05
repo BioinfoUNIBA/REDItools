@@ -38,11 +38,11 @@
 <li><a class="reference internal" href="#annotatetable-py">AnnotateTable.py</a></li>
 <li><a class="reference internal" href="#searchintable-py">SearchInTable.py</a></li>
 <li><a class="reference internal" href="#selectpositions-py">selectPositions.py</a></li>
-<li><a class="reference internal" href="#sorttable-py-new-in-version-1-0-3">SortTable.py (new in version 1.0.3)</a></li>
-<li><a class="reference internal" href="#tabletotabix-py-new-in-version-1-0-3">tableToTabix.py (new in version 1.0.3)</a></li>
-<li><a class="reference internal" href="#sortgff-py-new-in-version-1-0-3">SortGFF.py (new in version 1.0.3)</a></li>
-<li><a class="reference internal" href="#gfftotabix-py-new-in-version-1-0-3">GFFtoTabix.py (new in version 1.0.3)</a></li>
-<li><a class="reference internal" href="#tabletogff-py-new-in-version-1-0-3">TableToGFF.py (new in version 1.0.3)</a></li>
+<li><a class="reference internal" href="#sorttable-py-new-in-version-1-0-3">SortTable.py</a></li>
+<li><a class="reference internal" href="#tabletotabix-py-new-in-version-1-0-3">tableToTabix.py</a></li>
+<li><a class="reference internal" href="#sortgff-py-new-in-version-1-0-3">SortGFF.py</a></li>
+<li><a class="reference internal" href="#gfftotabix-py-new-in-version-1-0-3">GFFtoTabix.py</a></li>
+<li><a class="reference internal" href="#tabletogff-py-new-in-version-1-0-3">TableToGFF.py</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#usage-example">Usage Example</a><ul>
