@@ -102,8 +102,10 @@ platform in the standard BAM format and implement a variety of filters.</p>
 <div class="section" id="download">
 <h1>Download<a class="headerlink" href="#download" title="Permalink to this headline"></a></h1>
 <div class="section" id="download-reditools">
-<h2>Download REDItools<a class="headerlink" href="#download-reditools" title="Permalink to this headline"></a></h2>
+<h2>Download old REDItools packages<a class="headerlink" href="#download-reditools" title="Permalink to this headline"></a></h2>
 <ul class="simple">
+<li><a class="reference external" href="https://sourceforge.net/projects/reditools/files/REDItools-1.2.1.zip/download">REDItools v1.2.1</a></li>
+<li><a class="reference external" href="https://sourceforge.net/projects/reditools/files/REDItools-1.2.tar.gz/download">REDItools v1.2.0</a></li>
 <li><a class="reference external" href="http://sourceforge.net/projects/reditools/files/REDItools-1.0.4.tar.gz/download">REDItools v1.0.4</a></li>
 <li><a class="reference external" href="http://sourceforge.net/projects/reditools/files/REDItools-1.0.3.tar.gz/download">REDItools v1.0.3</a></li>
 <li><a class="reference external" href="http://sourceforge.net/projects/reditools/files/REDItools-1.0.2.tar.gz/download">REDItools v1.0.2</a></li>
@@ -124,10 +126,10 @@ In addition, REDItools need two external modules:</p>
 <li>pysam (mandatory) version >= 0.15 available <a class="reference external" href="https://pysam.readthedocs.io/en/latest/installation.html">here</a></li>
 <li>fisher (optional) version 0.1.4 (optional) available at python <a class="reference external" href="http://pypi.python.org/pypi/fisher/">web site</a></li>
 </ul>
-<p>To perform Blat correction and format alignment exchange (SAM to BAM and vice versa) the
+<p>To perform Blat correction and format alignment exchanges (SAM to BAM and vice versa) the
 following packages should be installed or already present in your path:</p>
 <ul class="simple">
-<li><a class="reference external" href="http://hgdownload.cse.ucsc.edu/admin/exe/">Blat</a> package including gfServer and gfClient executables or <a class="reference external" href="http://hgdownload.cse.ucsc.edu/admin/exe/">pblat</a></li>  
+<li><a class="reference external" href="http://hgdownload.cse.ucsc.edu/admin/exe/">Blat</a> package including gfServer and gfClient executables or <a class="reference external" href="http://icebert.github.io/pblat/">pblat</a></li>  
 <li><a class="reference external" href="http://www.htslib.org/">Samtools</a> and <a class="reference external" href="http://www.htslib.org/">tabix</a></li>
 </ul>
 </div>
