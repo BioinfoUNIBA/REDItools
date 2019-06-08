@@ -30,7 +30,7 @@ except:
 	sys.exit('<REDIPORTAL_table>') 
 
 i=0
-with open('table1_hg19.tsv','r') as e:
+with open(in_table,'r') as e:
 	e.readline()
 	for line in e:
 		line = line.split('\t')
