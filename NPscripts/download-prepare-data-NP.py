@@ -59,10 +59,11 @@ prg['redirec']=redirec
 cdir=os.getcwd()
 sys.stderr.write('Current directory: %s\n' %(cdir))
 folder=os.path.join(cdir,wdir)
-if os.path.exists(folder):
-	sys.exit('Working directory exists.')
-os.mkdir(folder)
-sys.stderr.write('Directory %s created.\n' %(wdir))
+if not os.path.exists(folder):
+	os.mkdir(folder)
+	sys.stderr.write('Directory %s created.\n' %(wdir))
+else:
+	sys.stderr.write('Found working directory.\n')
 sys.stderr.write('Entering %s\n' %(wdir))
 os.chdir(folder)
 
