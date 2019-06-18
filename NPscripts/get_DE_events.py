@@ -115,14 +115,9 @@ for directory in cwd:
 		if (int(coverage) >= min_coverage) and (float(freq) >= min_edit_frequency):
                 	sample_edited_sites.setdefault((directory, site), []).append(freq)
 		
-
-#table_columns = map(lambda x: x + '_' + sample_informations[x], cwd)
 table_columns = map(lambda x: x + '_' + sample_informations[x], sorted(sample_informations.keys()))
 
-
-#disease = sorted([i for i in table_columns if i.find('grade') != -1], key = lambda x: int(x[-1]))
 disease = [i for i in table_columns if i.upper().find('DIS') != -1]
-#controls = [i for i in table_columns if i.upper().find('CONTROL') != -1]
 controls = [i for i in table_columns if i.upper().find('CTRL') != -1]
 
 header = ['SITES'] + controls + disease + ['[num_controls/num_disease]'] + ['delta_diff'] + \
@@ -132,7 +127,6 @@ if pvalue_correction == 1:
 	header += ['pvalue Bonferroni corrected']
 if pvalue_correction == 2:
 	header += ['pvalue BH corrected']
-
 
 print '\t'.join(header)
 
@@ -147,15 +141,10 @@ for chrom in sorted(all_available_sites, key = lambda x: Set_Chr_Nr(x)):
 		ctrls_mean = sum(map(float, filter(lambda x : x!= '-', ctrls)))/len(filter(lambda x : x!= '-', ctrls))
 		dss_mean = sum(map(float, filter(lambda x : x!= '-', dss)))/len(filter(lambda x: x!= '-', dss))
 		delta_diff =  abs(ctrls_mean - dss_mean)
-		#dss_mean = np.mean(map(float, filter(lambda x : x!= '-', dss)))
-		#print ctrls, dss
 		pvalue=stats.mannwhitneyu(ctrls,dss, alternative='two-sided')
 		row.append(round(delta_diff, 3))
-#		fl_pval = getattr(pvalue[1], "tolist", lambda x=pvalue[1]: x)()
 		row.append(str(round(pvalue[1], 3)))
 		correction_argmnt = [(pvalue[1], map(float, filter(lambda x : x!= '-', ctrls+dss)))]
-#		correction_argmnt = [(fl_pval, map(float, filter(lambda x : x!= '-', ctrls+dss)))]
-		#print correction_argmnt		                
 		if pvalue_correction == 1:
 			row.append(round(get_b(correction_argmnt, 0.05)[-1], 6))
 		elif pvalue_correction == 2:
@@ -170,6 +159,5 @@ for chrom in sorted(all_available_sites, key = lambda x: Set_Chr_Nr(x)):
 	else:
 		print '\t'.join(map(str,row))
 
-#	print '\t'.join(map(str,row))
 
 
