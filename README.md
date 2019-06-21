@@ -636,9 +636,6 @@ during the run.</td></tr>
 <kbd><span class="option">-c</span></kbd></td>
 <td>Minimum read coverage (dna,rna) [10,10]</td></tr>
 <tr><td class="option-group">
-<kbd><span class="option">-Q</span></kbd></td>
-<td>Fastq offset value (dna,rna) [33,33]. For Illumina fastq 1.3+ 64 should be used.</td></tr>
-<tr><td class="option-group">
 <kbd><span class="option">-q</span></kbd></td>
 <td>Minimum quality score (dna,rna) [25,25]</td></tr>
 <tr><td class="option-group">
@@ -801,9 +798,6 @@ have to be stored in TAB files (see above for details).</p>
 <kbd><span class="option">-c</span></kbd></td>
 <td>Min. read coverage [10]</td></tr>
 <tr><td class="option-group">
-<kbd><span class="option">-Q</span></kbd></td>
-<td>Fastq offset value [33]</td></tr>
-<tr><td class="option-group">
 <kbd><span class="option">-q</span></kbd></td>
 <td>Minimum quality score [25]</td></tr>
 <tr><td class="option-group">
@@ -922,9 +916,6 @@ of RNA editing phenomenon.</p>
 <tr><td class="option-group">
 <kbd><span class="option">-c</span></kbd></td>
 <td>Min. read coverage [10]</td></tr>
-<tr><td class="option-group">
-<kbd><span class="option">-Q</span></kbd></td>
-<td>Fastq offset value [33]</td></tr>
 <tr><td class="option-group">
 <kbd><span class="option">-q</span></kbd></td>
 <td>Min. quality score [25]</td></tr>
@@ -1058,9 +1049,6 @@ Reference fasta file can be converted in .2bit format using the utility <a class
 <tr><td class="option-group">
 <kbd><span class="option">-q</span></kbd></td>
 <td>Minimum quality score [25]</td></tr>
-<tr><td class="option-group">
-<kbd><span class="option">-Q</span></kbd></td>
-<td>Fastq offset value [33]</td></tr>
 <tr><td class="option-group">
 <kbd><span class="option">-V</span></kbd></td>
 <td>Verify if gfServer is alive</td></tr>
@@ -1571,8 +1559,7 @@ Results saved on reditool-test/DnaRna_891206177/outTable_891206177
 Script time --&gt; END: 06/02/2013 20:45:13</pre>
 </div>
 <p>In this case we are requiring to extract RNA and DNA positions with a minimal coverage of 10 for DNA and 1 for RNA, a minimum quality score of 25 for both,
-a minimum mapping quality of 20 for both. Please consider that quality scores in DNA are in Sanger format, so 33 is used as offset to calculate the phred score
-per site genomic. On the contrary, quality scores for RNA reads are in the Illumina 1.3+ format and, thus, the value 64 has to be used through the option -Q.
+a minimum mapping quality of 20 for both.
 Since RNA reads are strand oriented and the second read of the pair maintains the RNA orientation, we ask REDItoolDnaRna.py to infer the strand by -s 2 (second in pair good for orientation),
 and assign to each position the overrepresented strand (-g 1 option). In addition, we remove first 6 nucleotides from each read (-a 6-0) and require sites supported by at least 2
 variant bases (-v 2) without taking into account the frequency of variation in both RNA (-n 0.0) and DNA (-N 0.0). Finally, we exclude positions not supported by DNA-Seq reads (-V).
