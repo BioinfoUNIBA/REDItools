@@ -81,6 +81,36 @@ platform in the standard BAM format and implement a variety of filters.</p>
 <div class="section" id="publications">
 <h1>Publications<a class="headerlink" href="#publications" title="Permalink to this headline"></a></h1>
 <ul>
+<li><p class="first"><em>Diroma MA, Ciaccia L, Pesole G and Picardi E</em></p>
+<p><strong>Elucidating the editome: bioinformatics approaches for RNA editing detection.</strong></p>
+<p><em>Brief Bioinform. 2019;20(2):436-447</em></p>
+<p>PubMed PMID: <a class="reference external" href="http://www.ncbi.nlm.nih.gov/pubmed/29040360">29040360</a></p>
+</li>
+<li><p class="first"><em>Rossetti C, Picardi E, Ye M, Camilli G, D&#8217;Erchia AM, Cucina L, Locatelli F, Fianchi L, Teofili L, Pesole G, Gallo A and Sorrentino R</em></p>
+<p><strong>RNA editing signature during myeloid leukemia cell differentiation.</strong></p>
+<p><em>Leukemia. 2017;31(12):2824-2832</em></p>
+<p>PubMed PMID: <a class="reference external" href="http://www.ncbi.nlm.nih.gov/pubmed/28484266">28484266</a></p>
+</li>
+<li><p class="first"><em>Picardi E, Horner DS and Pesole G</em></p>
+<p><strong>Single-cell transcriptomics reveals specific RNA editing signatures in the human brain.</strong></p>
+<p><em>RNA. 2017;23(6):860-865</em></p>
+<p>PubMed PMID: <a class="reference external" href="http://www.ncbi.nlm.nih.gov/pubmed/28258159">28258159</a></p>
+</li>
+<li><p class="first"><em>Picardi E, D&#8217;Erchia AM, Lo Giudice C and Pesole G</em></p>
+<p><strong>REDIportal: a comprehensive database of A-to-I RNA editing events in humans.</strong></p>
+<p><em>Nucleic Acids Res. 2017;45(D1):D750-D757</em></p>
+<p>PubMed PMID: <a class="reference external" href="http://www.ncbi.nlm.nih.gov/pubmed/27587585">27587585</a></p>
+</li>
+<li><p class="first"><em>Picardi E, Manzari C, Mastropasqua F, Aiello I, D&#8217;Erchia AM and Pesole G</em></p>
+<p><strong>Profiling RNA editing in human tissues: towards the inosinome Atlas.</strong></p>
+<p><em>Sci Rep. 2015;5:14941</em></p>
+<p>PubMed PMID: <a class="reference external" href="http://www.ncbi.nlm.nih.gov/pubmed/26449202">26449202</a></p>
+</li>
+<li><p class="first"><em>Picardi E, D&#8217;Erchia AM, Montalvo A and Pesole G</em></p>
+<p><strong>Using REDItools to Detect RNA Editing Events in NGS Datasets.</strong></p>
+<p><em>Curr Protoc Bioinformatics. 2015;49:12.12.1-15</em></p>
+<p>PubMed PMID: <a class="reference external" href="http://www.ncbi.nlm.nih.gov/pubmed/25754992">25754992</a></p>
+</li>
 <li><p class="first"><em>Picardi E, D&#8217;Erchia AM, Gallo A and Pesole G</em></p>
 <p><strong>Detection of post-transcriptional RNA editing events.</strong></p>
 <p><em>Methods Mol Biol. 2015;1269:189-205</em></p>
