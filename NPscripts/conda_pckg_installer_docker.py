@@ -41,9 +41,10 @@ while os.system(conda_url) != 0 and i <= 5:
 	os.system(conda_url)
 	i+=1
 os.system('chmod +x Miniconda2-latest-Linux-x86_64.sh')
-os.system('bash Miniconda2-latest-Linux-x86_64.sh -b -p /REDItools/NPscripts/opt/')
-home_folder = os.path.expanduser('~')
-cmd = home_folder + '/miniconda2/bin/conda'
+os.system('bash Miniconda2-latest-Linux-x86_64.sh -b -p /REDItools/NPscripts/')
+#home_folder = os.path.expanduser('~')
+#cmd = home_folder + '/miniconda2/bin/conda'
+cmd = '/REDItools/NPscripts/' + '/miniconda2/bin/conda'
 os.system(cmd + ' config --add channels defaults')
 os.system(cmd + ' config --add channels bioconda')
 os.system(cmd + ' config --add channels conda-forge')
