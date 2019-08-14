@@ -54,4 +54,4 @@ install_conda_packages(cmd)
 
 #os.system(cmd + ' init bash ')
 #os.system('source /root/.bashrc ')
-os.system(cmd + ' activate nature_protocol')
+#os.system(cmd + ' activate nature_protocol')
