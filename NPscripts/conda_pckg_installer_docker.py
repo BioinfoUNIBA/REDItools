@@ -45,9 +45,9 @@ os.system('bash Miniconda2-latest-Linux-x86_64.sh -b -p /REDItools/NPscripts/min
 #home_folder = os.path.expanduser('~')
 #cmd = home_folder + '/miniconda2/bin/conda'
 cmd = '/REDItools/NPscripts' + '/miniconda2/bin/conda'
-#os.system(cmd + ' config --add channels defaults')
+os.system(cmd + ' config --add channels defaults')
 os.system(cmd + ' config --add channels bioconda')
-#os.system(cmd + ' config --add channels conda-forge')
+os.system(cmd + ' config --add channels conda-forge')
 os.system(cmd + ' create -n nature_protocol python=2.7 anaconda -y')
 
 install_conda_packages(cmd)
