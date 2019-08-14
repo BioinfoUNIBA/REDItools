@@ -52,6 +52,6 @@ os.system(cmd + ' create -n nature_protocol python=2.7 anaconda -y')
 
 install_conda_packages(cmd)
 
-os.system(cmd + ' init bash ')
-os.system('source /root/.bashrc ')
+#os.system(cmd + ' init bash ')
+#os.system('source /root/.bashrc ')
 os.system(cmd + ' activate nature_protocol')
