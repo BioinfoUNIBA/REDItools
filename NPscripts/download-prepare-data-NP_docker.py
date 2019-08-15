@@ -1,3 +1,4 @@
+#!/usr/bin/env python 
 import sys, os, time
 import commands
 import distutils.spawn
