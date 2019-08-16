@@ -1,5 +1,5 @@
 #!/usr/bin/env python 
-#
+# Mantainer clalogiudice@gmail.com
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
 # in the Software without restriction, including without limitation the rights
@@ -41,10 +41,11 @@ while os.system(conda_url) != 0 and i <= 5:
 	os.system(conda_url)
 	i+=1
 os.system('chmod +x Miniconda2-latest-Linux-x86_64.sh')
-os.system('bash Miniconda2-latest-Linux-x86_64.sh -b -p /REDItools/NPscripts/miniconda2/')
-#home_folder = os.path.expanduser('~')
-#cmd = home_folder + '/miniconda2/bin/conda'
-cmd = '/REDItools/NPscripts' + '/miniconda2/bin/conda'
+#os.system('bash Miniconda2-latest-Linux-x86_64.sh -b -p /REDItools/NPscripts/miniconda2/')
+os.system('bash Miniconda2-latest-Linux-x86_64.sh -b -p /miniconda2/')
+os.chdir('../')
+os.system('rm -rf opt/')
+cmd = '/miniconda2/bin/conda'
 os.system(cmd + ' config --add channels defaults')
 os.system(cmd + ' config --add channels bioconda')
 os.system(cmd + ' config --add channels conda-forge')
@@ -52,6 +53,4 @@ os.system(cmd + ' create -n nature_protocol python=2.7 anaconda -y')
 
 install_conda_packages(cmd)
 
-#os.system(cmd + ' init bash ')
-#os.system('source /root/.bashrc ')
-#os.system(cmd + ' activate nature_protocol')
+
