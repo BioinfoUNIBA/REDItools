@@ -31,7 +31,7 @@ def get_time(tstart,tend):
 	return t_taken
 
 if usepath!='1':
-	exe=['bwa','STAR','awk','bgzip','tabix','sort','gtf_splicesites','w get -c --retry-connrefused --tries=0 --timeout=5 ','python','gunzip']
+	exe=['bwa','STAR','awk','bgzip','tabix','sort','gtf_splicesites','wget -c --retry-connrefused --tries=0 --timeout=5 ','python','gunzip']
 	nt=[]
 	prg={}
 	for i in exe:
