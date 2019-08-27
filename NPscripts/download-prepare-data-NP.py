@@ -36,7 +36,7 @@ if usepath!='1':
 	for i in exe:
 		p=is_tool(i)
 		if p==1: nt.append(i)
-		prg[p]=p
+		prg[i]=p
 	if len(nt)>0:
 		for i in nt:
 			sys.stderr.write('Program %s NOT found\n' %(i))
