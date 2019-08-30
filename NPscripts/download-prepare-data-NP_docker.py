@@ -307,7 +307,7 @@ cmd7='%s table1_full.txt.gz' %(prg['gunzip'])
 cmd='%s \'OFS="\t"{sum+=1; print $1,"rediportal","ed",$2,$2,".",$5,".","gene_id \""sum"\"; transcript_id \""sum"\";"}\' table1_full.txt > atlas.gtf' %(prg['awk'])
 cmd1='%s atlas.gtf' %(prg['bgzip'])
 cmd2='%s -p gff atlas.gtf.gz' %(prg['tabix'])
-cmd3='%s %s table1_full.txt > atlas_recoding.gff' %(prg['python'],redirec)
+cmd3='%s %s table1_full.txt > atlas_recoding.gff' %(prg['python'],prg['redirec']) #redirec
 cmd4='%s -V -k1,1 -k4,4n atlas_recoding.gff > srtd_atlas_recoding.gff' %(prg['sort'])
 cmd5='%s srtd_atlas_recoding.gff' %(prg['bgzip'])
 cmd6='%s -p gff srtd_atlas_recoding.gff.gz' %(prg['tabix'])
