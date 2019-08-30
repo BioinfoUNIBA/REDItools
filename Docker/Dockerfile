@@ -27,6 +27,6 @@ RUN chmod +x download-prepare-data-NP_docker.py
 WORKDIR "/"
 
 ENV PATH /miniconda2/envs/nature_protocol/bin:$PATH
-RUN ./REDItools/NPscripts/download-prepare-data-NP_docker.py rna_editing_protocol ./REDItools/main/ 0
+RUN ./REDItools/NPscripts/download-prepare-data-NP_docker.py rna_editing_protocol ./REDItools/ 0
 RUN echo "NATURE_PROTOCOL environment preparation COMPLETED"
 WORKDIR "/rna_editing_protocol/" 
