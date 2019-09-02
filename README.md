@@ -51,6 +51,9 @@
 </li>
 <li><a class="reference internal" href="#contact">Contact</a></li>
 <li><a class="reference internal" href="#Nature Protocol scripts">Nature Protocol scripts</a></li>    
+    <ul>
+      <li>a class="reference internal" href="#conda_pckgs_installer.py">conda_pckgs_installer.py</a></li>
+    </ul>
 </ul>
 
 
@@ -1682,53 +1685,12 @@ chr21   47741221        A       0       49      36.33   [44, 0, 5, 0]   AG      
 </div>
 <div class="section" id="Nature Protocol Scripts">
 <h1>Nature Protocol Scripts<a class="headerlink" href="#Nature Protocol Scripts"></a></h1>
-<div class="section" id="annotatetable-py">
-<h2>AnnotateTable.py<a class="headerlink" href="#annotatetable-py" title="Permalink to this headline"></a></h2>
-<p>AnnotateTable.py annotates individual positions of a table file according to annotations indexed by tabix tool.
-It adds from 1 to 3 additional columns according to -c option.</p>
-<dl class="docutils">
-<dt>Options:</dt>
-<dd><table class="first last docutils option-list" frame="void" rules="none">
-<col class="option" />
-<col class="description" />
-<tbody valign="top">
-<tr><td class="option-group">
-<kbd><span class="option">-a</span></kbd></td>
-<td>Sorted Annotation file in GTF format</td></tr>
-<tr><td class="option-group">
-<kbd><span class="option">-i</span></kbd></td>
-<td>Annotate a file of positions [column1=region, column2=coordinate (1 based)]
-or a single position [region:coordinate (1 based)]</td></tr>
-<tr><td class="option-group">
-<kbd><span class="option">-s</span></kbd></td>
-<td>Strand column in annotation file [4]</td></tr>
-<tr><td class="option-group">
-<kbd><span class="option">-u</span></kbd></td>
-<td>Not use table strand info (fix it to 2)</td></tr>
-<tr><td class="option-group">
-<kbd><span class="option">-c</span></kbd></td>
-<td>Add columns separated by comma (feature:1, gene_id:2, transcript_id:3) [1,2]</td></tr>
-<tr><td class="option-group">
-<kbd><span class="option">-n</span></kbd></td>
-<td>Column name [Col]</td></tr>
-<tr><td class="option-group">
-<kbd><span class="option">-S</span></kbd></td>
-<td>Correct strand by annotation</td></tr>
-<tr><td class="option-group">
-<kbd><span class="option">-C</span></kbd></td>
-<td>Columns with base distribution [7,12] (in combination with -S)</td></tr>
-<tr><td class="option-group">
-<kbd><span class="option">-o</span></kbd></td>
-<td>Save lines to a file</td></tr>
-<tr><td class="option-group">
-<kbd><span class="option">-h</span></kbd></td>
-<td>Print the help</td></tr>
-</tbody>
-</table>
-</dd>
-</dl>
+<div class="section" id="conda_pckgs_installer.py">
+<h2>conda_pckgs_installer.py<a class="headerlink" href="#conda_pckgs_installer.py"></a></h2>
+<p>Conda_pckgs_installer.py checks in an interactive way the user's machine for Conda environment and all packages 
+  required by the protocol. If something is wrong it solves the missing dependencies</p>
 <p>Example:</p>
-<div class="highlight-python"><pre>AnnotateTable.py -i mytable -a rmsk.gtf.gz -u -c1,2,3 -n rmsk -o mytable_rmsk</pre>
+<div class="highlight-python"><pre>python conda_pckgs_installer.py</pre>
 </div>
 </div>
 </div>
