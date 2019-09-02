@@ -52,7 +52,7 @@
 <li><a class="reference internal" href="#contact">Contact</a></li>
 <li><a class="reference internal" href="#Nature Protocol scripts">Nature Protocol scripts</a></li>    
     <ul>
-      <li>a class="reference internal" href="#conda_pckgs_installer.py">conda_pckgs_installer.py</a></li>
+      <li><a class="reference internal" href="#conda_pckgs_installer.py">conda_pckgs_installer.py</a></li>
     </ul>
 </ul>
 
