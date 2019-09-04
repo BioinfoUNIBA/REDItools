@@ -3,18 +3,13 @@ import sys, os, time
 import commands
 import distutils.spawn
 
-wdir=rna_editing_protocol
-redipath=./REDItools/
+wdir='rna_editing_protocol'
+redipath='./REDItools/'
 
 def is_tool(name):
 	wn=distutils.spawn.find_executable(name)
 	if wn==None: return 1
 	else: return wn
-
-def get_time(tstart,tend):
-	telapsed=tend - tstart
-	t_taken=time.strftime("%H:%M:%S", time.gmtime(telapsed))
-	return t_taken
 
 exe=['bwa','STAR','awk','bgzip','tabix','sort','gtf_splicesites','wget','python','gunzip']
 nt=[]
