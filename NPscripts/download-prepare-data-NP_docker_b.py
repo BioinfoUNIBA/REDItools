@@ -322,5 +322,4 @@ if ipkgs.strip().upper() == 'YES':
 
 		sys.stderr.write('ALL DONE. ENJOY REDItools.\n')
 else:
-	sys.stderr.write('Please provide your input data according to nature_protocol or \
-			 relaunch this script. \n')
+	sys.stderr.write('Please provide your input data according to nature_protocol or relaunch this script. \n')
