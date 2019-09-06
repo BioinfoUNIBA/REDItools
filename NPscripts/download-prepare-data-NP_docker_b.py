@@ -1,11 +1,17 @@
 #!/usr/bin/env python 
-import sys, os, time
+import sys, os, time, shutil
 import commands
 import distutils.spawn
 
 
 wdir='rna_editing_protocol'
 redipath='./REDItools/'
+
+def remove_folder(path):
+	# check if folder exists
+	if os.path.exists(path):
+	# remove if exists	
+		shutil.rmtree(path)
 
 def getData(cmd):
 	tr=0
@@ -44,17 +50,17 @@ redirec=os.path.join(redipath,'accessory','rediportal2recoding.py')
 if not os.path.exists(redipath): sys.exit('rediportal2recoding.py script not found.')
 prg['redirec']='../../' + redirec.lstrip('./')
 
+ipkgs = raw_input("Download nature_protocol input data? yes/no")
+
 cdir=os.getcwd()
 sys.stderr.write('Current directory: %s\n' %(cdir))
 folder=os.path.join(cdir,wdir)
-os.mkdir(folder)
-sys.stderr.write('Directory %s created.\n' %(wdir))
-sys.stderr.write('Entering %s\n' %(wdir))
-os.chdir(folder)
-
-ipkgs = raw_input("Download nature_protocol input data? yes/no")
 
 if ipkgs.strip().upper() == 'YES':
+	os.mkdir(folder)
+	sys.stderr.write('Directory %s created.\n' %(wdir))
+	sys.stderr.write('Entering %s\n' %(wdir))
+	os.chdir(folder)
 	#human genome
 	sys.stderr.write('Getting human genome\n')
 	tstart = time.time()
@@ -323,3 +329,4 @@ if ipkgs.strip().upper() == 'YES':
 		sys.stderr.write('ALL DONE. ENJOY REDItools.\n')
 else:
 	sys.stderr.write('Please provide your input data according to nature_protocol or relaunch this script. \n')
+	remove_folder(folder)
