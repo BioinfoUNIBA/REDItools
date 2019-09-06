@@ -57,6 +57,7 @@ sys.stderr.write('Current directory: %s\n' %(cdir))
 folder=os.path.join(cdir,wdir)
 
 if ipkgs.strip().upper() == 'YES':
+	remove_folder(folder) # if exists
 	os.mkdir(folder)
 	sys.stderr.write('Directory %s created.\n' %(wdir))
 	sys.stderr.write('Entering %s\n' %(wdir))
@@ -329,4 +330,3 @@ if ipkgs.strip().upper() == 'YES':
 		sys.stderr.write('ALL DONE. ENJOY REDItools.\n')
 else:
 	sys.stderr.write('Please provide your input data according to nature_protocol or relaunch this script. \n')
-	remove_folder(folder)
