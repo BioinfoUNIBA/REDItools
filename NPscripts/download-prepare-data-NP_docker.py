@@ -50,14 +50,14 @@ redirec=os.path.join(redipath,'accessory','rediportal2recoding.py')
 if not os.path.exists(redipath): sys.exit('rediportal2recoding.py script not found.')
 prg['redirec']='../../' + redirec.lstrip('./')
 
-ipkgs = raw_input("Download nature_protocol input data? yes/no")
+ipkgs = raw_input("Download nature_protocol input data? yes/no ")
 
 cdir=os.getcwd()
 sys.stderr.write('Current directory: %s\n' %(cdir))
 folder=os.path.join(cdir,wdir)
 
 if ipkgs.strip().upper() == 'YES':
-	remove_folder(folder) # if exists
+	remove_folder(folder) # from previous installations
 	os.mkdir(folder)
 	sys.stderr.write('Directory %s created.\n' %(wdir))
 	sys.stderr.write('Entering %s\n' %(wdir))
