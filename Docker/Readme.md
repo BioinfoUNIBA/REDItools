@@ -6,8 +6,8 @@
   </head>
   <body>
 <h1>DOCKER BASIC COMMANDS</h1>
-<h3>This Dockerfile and its related image are part of the supplemental material of the paper<br>
-  Investigating RNA editing in deep transcriptome datasets with REDItools and REDIportal</h3>
+<h5>This Dockerfile and its related image are part of the supplemental material of the paper<br>
+  "Investigating RNA editing in deep transcriptome datasets with REDItools and REDIportal"</h5>
 <p>
   You can compile an image from this dockerfile with:<br>
 <pre>docker build -t [image_name] .
