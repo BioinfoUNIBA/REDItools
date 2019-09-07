@@ -6,14 +6,13 @@
   </head>
   <body>
 <h1>DOCKER BASIC COMMANDS</h1>
-<p>You can compile your image from this dockerfile with:<br>
+<p>You can compile an image from this dockerfile with:<br>
+<pre>docker build -t <image_name> .
+eg. docker build -t rna_editing_protocol .</pre>
 <br>
-<pre>docker build -t <image_name> .</pre>
-eg. docker build -t rna_editing_protocol .
-
-and run a container from it with:
-docker run -it image_name bash
-eg. docker run -it rna_editing_protocol bash</p>
+and run a container from it with:<br>
+<pre>docker run -it image_name bash
+eg. docker run -it rna_editing_protocol bash</pre>
 
 <p>
 OR
