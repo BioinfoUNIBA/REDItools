@@ -7,11 +7,11 @@
   <body>
 <h1>DOCKER BASIC COMMANDS</h1>
 <p>You can compile an image from this dockerfile with:<br>
-<pre>docker build -t /<image_name/> .
+<pre>docker build -t [image_name] .
 eg. docker build -t rna_editing_protocol .</pre>
 <br>
 and run a container from it with:<br>
-<pre>docker run -it image_name bash
+<pre>docker run -it [image_name] bash
 eg. docker run -it rna_editing_protocol bash</pre>
 
 <p>
