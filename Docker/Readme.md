@@ -6,8 +6,9 @@
   </head>
   <body>
 <h1>DOCKER BASIC COMMANDS</h1>
-<p>You can compile your image from this dockerfile with:
-<br>docker build -t <image_name> .<br>
+<p>You can compile your image from this dockerfile with:<br>
+<br>
+<pre>docker build -t <image_name> .</pre>
 eg. docker build -t rna_editing_protocol .
 
 and run a container from it with:
