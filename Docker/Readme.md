@@ -5,9 +5,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
   </head>
   <body>
-<h1> Docker basic commands</h1>
+<h1>DOCKER BASIC COMMANDS</h1>
 <p>You can compile your image from this dockerfile with:
-docker build -t <image_name> .
+<br>docker build -t <image_name> .<br>
 eg. docker build -t rna_editing_protocol .
 
 and run a container from it with:
