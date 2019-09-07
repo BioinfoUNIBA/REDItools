@@ -21,7 +21,7 @@ and run a container from it with:<br>
   <b>OR</b>
 </p>
 <p>
-  download a pre-built image from dockerhub with:
+  Download a pre-built image from dockerhub with:
   <pre>docker pull claudiologiudice/rna_editing_protocol:latest</pre>
   <br>
   and run a container from it with:
