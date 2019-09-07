@@ -1,3 +1,6 @@
+<html>
+<body>
+<h1> Docker basic commands</h1>
 You can compile your image from this dockerfile with:
 docker build -t <image_name> .
 eg. docker build -t rna_editing_protocol .
@@ -14,3 +17,5 @@ docker pull claudiologiudice/rna_editing_protocol:latest
 
 and run a container from it with:
 docker run -it claudiologiudice/rna_editing_protocol:latest bash
+</body>
+</html>
