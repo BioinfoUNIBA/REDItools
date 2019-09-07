@@ -13,7 +13,7 @@
 <pre>docker build -t [image_name] .
 <b>eg.</b> docker build -t rna_editing_protocol .</pre>
 <br>
-and run a container from it with:<br>
+and run a container with:<br>
 <pre>docker run -it [image_name] bash
 <b>eg.</b> docker run -it rna_editing_protocol bash</pre>
     </p>
@@ -24,7 +24,7 @@ and run a container from it with:<br>
   Download a pre-built image from dockerhub with:
   <pre>docker pull claudiologiudice/rna_editing_protocol:latest</pre>
   <br>
-  and run a container from it with:
+  and run a container with:
   <pre>docker run -it claudiologiudice/rna_editing_protocol:latest bash</pre>
   </p>
 </body>
