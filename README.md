@@ -52,8 +52,10 @@
 <li><a class="reference internal" href="#contact">Contact</a></li>
 <li><a class="reference internal" href="#Nature Protocol scripts">Nature Protocol scripts</a></li>    
     <ul>
+      <li><a class="reference internal" href="#">collect_editing_candidates.py</a></li>
       <li><a class="reference internal" href="#conda_pckgs_installer.py">conda_pckgs_installer.py</a></li>
-      <li><a class="reference internal" href="#">download-prepare-data-NPpy</a></li>
+      <li><a class="reference internal" href="#download-prepare-data-NP.py">download-prepare-data-NPpy</a></li>
+      <li><a class="reference internal" href="#">get_Statistics.py</a></li>      
 </ul>
 
 
