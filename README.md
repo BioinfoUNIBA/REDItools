@@ -1687,20 +1687,19 @@ chr21   47741221        A       0       49      36.33   [44, 0, 5, 0]   AG      
 </div>
 <div class="section" id="Nature Protocol Scripts">
 <h1>Nature Protocol Scripts<a class="headerlink" href="#Nature Protocol Scripts"></a></h1>
-<ul>
-<li><div class="section" id="conda_pckgs_installer.py">
+<div class="section" id="conda_pckgs_installer.py">
 <h2>conda_pckgs_installer.py<a class="headerlink" href="#conda_pckgs_installer.py"></a></h2>
 <p>Conda_pckgs_installer.py checks in an interactive way the user's machine for Conda environment and all packages 
   required by the protocol. If something is wrong it solves the missing dependencies</p>
 <p>Example:</p>
 <div class="highlight-python"><pre>python conda_pckgs_installer.py</pre>
-</div></li>
-<li><div class="section" id="download-prepare-data-NP.py">
+</div>
+<div class="section" id="download-prepare-data-NP.py">
 <h2>download-prepare-data-NP.py<a class="headerlink" href="#download-prepare-data-NP.py"></a></h2>
 <p>For novice users, we provide a python script, named download-prepare-data-NP.py, to automatically download and prepare all required files.</p>
 <p>Example:</p>
 <div class="highlight-python"><pre>python download-prepare-data-NP.py</pre>
-</div></li>
+</div>
 </div>
 </div>
 <a href="#">Go to top of page</a>
