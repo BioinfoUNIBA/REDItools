@@ -1699,12 +1699,12 @@ chr21   47741221        A       0       49      36.33   [44, 0, 5, 0]   AG      
 <p>For novice users, we provide a python script, named download-prepare-data-NP.py, to automatically download and prepare all required files.</p>
 <p>Example:</p>
 <div class="highlight-python"><pre>python download-prepare-data-NP.py</pre>
-<br>where:</br>
+<b>where:</b>
 <ul>
   <li> “rna_editing_protocol” is the main folder in which all data will be downloaded;</li>
   <li> [REDItools folder] is the absolute path to REDItools folder;</li>
   <li> [use paths 0/1] is a flag to use (1) or not (0) a file with absolute paths to requested programs;</li>
-  <li> if  use paths 0/1> is set to 0 and above software has been correctly installed, paths to requested programs will be    automatically checked.</li>
+  <li> if [use paths 0/1] is set to 0 and above software has been correctly installed, paths to requested programs will be    automatically checked.</li>
 </ul>
 </div>
 </div>
