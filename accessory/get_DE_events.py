@@ -28,7 +28,7 @@ parser.add_argument("-mts", action = 'store', dest = 'min_sample_testing',
 		type = float, default=50.0, help="min percentage of each sample category")
 parser.add_argument("-sig", action = 'store', dest = 'only_significant',
 		type = str, default = 'no', help = 'Return only significant editing events')
-parser.add_argument("-linear", action = 'store_false', help = 'Enable linear model')
+parser.add_argument("-linear", action = 'store_true', help = 'Enable linear model')
 
 args = parser.parse_args()
 min_coverage = args.min_coverage
