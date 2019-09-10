@@ -156,7 +156,7 @@ if enable_linear_model:
         header = ['chromosome', 'position', 'type_editing'] + map(remove_underscore, controls) + map(remove_underscore, disease)
         outtable += '\t'.join(header)
 	outtable += '\n'
-        print '\t'.join(header)
+        #print '\t'.join(header)
         for chrom in sorted(all_available_sites, key = lambda x: Set_Chr_Nr(x)):
                 row = [chrom]
                 for col in header[2:]:#header.index('[num_controls/num_disease]')]:
@@ -183,7 +183,7 @@ if enable_linear_model:
 	cmd = 'python ./call_differential_editing_sites.py -input_file ' + samples_informations_file
 	os.system(cmd)
 
-if not enable_linear_model:
+else:
 	header = ['chromosome', 'position', 'type_editing'] + controls + disease + ['[num_controls/num_disease]'] + ['delta_diff'] + ['pvalue (Mannwhitney)']
 
 	if pvalue_correction == 1:
