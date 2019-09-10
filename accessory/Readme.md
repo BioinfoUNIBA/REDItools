@@ -28,20 +28,16 @@ optional arguments:
   -h, --help                             show this help message and exit
   -c MIN_COVERAGE                        Coverage-q30
   -cpval PVALUE_CORRECTION 1 -->         Bonferroni correction / 2 --> Benjamini hochberg
-  -input_file SAMPLES_INFORMATIONS_FILE  Comma separated file e.g: 
-  <b>Sample,Status</b>
-  SRR3306823,DIS
-  SRR3306824,DIS
-  SRR3306830,CTRL
-  SRR3306831,CTRL..
+  -input_file SAMPLES_INFORMATIONS_FILE  Comma separated file e.g: <b>Sample,Status</b>
   -f MIN_EDIT_FREQUENCY Editing Frequency
   -mts MIN_SAMPLE_TESTING min percentage of each sample category
-  -sig ONLY_SIGNIFICANT Return only significant editing events (only if -cpval flag is activated)
+  -sig ONLY_SIGNIFICANT Return only significant editing events (if -cpval flag is activated)
   -linear               Calculate differential RNA editing using the methodology by <a href="https://www.nature.com/articles/s41593-018-0287-x"> Tran et al. (2019)</a>
 
 <b>e.g.</b> python ../REDItools/accessory/get_DE_events.py-cpval 2 -input  sample_information.csv -sig yes
-
+The script will filter REDItoolDnaRna.py outputs for each sample contained in the SAMPLES_INFORMATIONS_FILE returning
+only significant editing events (pval <= 0.05) in accordance with Benjamini hochberg correction.
 
 </pre>
 </body>
-</html>
+</html> 
