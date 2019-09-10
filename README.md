@@ -1692,6 +1692,12 @@ chr21   47741221        A       0       49      36.33   [44, 0, 5, 0]   AG      
 <p>Example:</p>
 <div class="highlight-python"><pre>python conda_pckgs_installer.py</pre>
 </div>
+<div class="section" id="download-prepare-data-NP.py">
+<h2>download-prepare-data-NP.py<a class="headerlink" href="#download-prepare-data-NP.py"></a></h2>
+<p>For novice users, we provide a python script, named download-prepare-data-NP.py, to automatically download and prepare all required files.</p>
+<p>Example:</p>
+<div class="highlight-python"><pre>python conda_pckgs_installer.py</pre>
+</div>
 </div>
 </div>
 <a href="#">Go to top of page</a>
