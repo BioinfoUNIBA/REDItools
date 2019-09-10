@@ -1690,7 +1690,7 @@ chr21   47741221        A       0       49      36.33   [44, 0, 5, 0]   AG      
 <p>Example:</p>
 <div class="highlight-python">
   <pre>python collect_editing_candidates.py $ sort -k1,1 -k2,2n editing.txt>editing_sorted.txt</pre>
-The editing_sorted.txt file contains the list of RNA editing candidates sorted by chromosome number and position. The full content for chr4 in NA12878 cell line is available online at https://github.com/BioinfoUNIBA/REDItools/tree/master/NPfiles. 
+<p class="text-justify"> The editing_sorted.txt file contains the list of RNA editing candidates sorted by chromosome number and position. The full content for chr4 in NA12878 cell line is available online at https://github.com/BioinfoUNIBA/REDItools/tree/master/NPfiles.</p>
 </div>
   
 <div class="section" id="conda_pckgs_installer.py">
@@ -1713,7 +1713,7 @@ where:
   <li> [REDItools folder] is the absolute path to REDItools folder;</li>
   <li> [use paths 0/1] is a flag to use (1) or not (0) a file with absolute paths to requested programs;</li>
   </ul>
-  <u>Note.</u> If [use paths 0/1] is set to 0 and above software has been correctly installed, paths to requested programs will be automatically checked.</li>
+<p class="text-justify"><u>Note.</u> If [use paths 0/1] is set to 0 and above software has been correctly installed, paths to requested programs will be automatically checked.</p>
 <div class="section" id="contact">
 <h1>Contact<a class="headerlink" href="#contact" title="Permalink to this headline"></a></h1>
 <ul class="simple">
