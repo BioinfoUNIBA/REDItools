@@ -52,7 +52,7 @@
 <li><a class="reference internal" href="#contact">Contact</a></li>
 <li><a class="reference internal" href="#Nature Protocol scripts">Nature Protocol scripts</a></li>    
     <ul>
-      <li><a class="reference internal" href="#">collect_editing_candidates.py</a></li>
+      <li><a class="reference internal" href="#collect_editing_candidates.py">collect_editing_candidates.py</a></li>
       <li><a class="reference internal" href="#conda_pckgs_installer.py">conda_pckgs_installer.py</a></li>
       <li><a class="reference internal" href="#download-prepare-data-NP.py">download-prepare-data-NPpy</a></li>
       <li><a class="reference internal" href="#">get_Statistics.py</a></li>      
@@ -1679,15 +1679,10 @@ chr21   47741221        A       0       49      36.33   [44, 0, 5, 0]   AG      
 </div>
 </div>
 </div>
+
 <div class="section" id="Nature Protocol Scripts">
 <h1>Nature Protocol Scripts<a class="headerlink" href="#Nature Protocol Scripts"></a></h1>
-<div class="section" id="conda_pckgs_installer.py">
-<h2>conda_pckgs_installer.py<a class="headerlink" href="#conda_pckgs_installer.py"></a></h2>
-<p>Conda_pckgs_installer.py checks in an interactive way the user's machine for Conda environment and all packages 
-  required by the protocol. If something is wrong it solves the missing dependencies</p>
-<p>Example:</p>
-<div class="highlight-python"><pre>python conda_pckgs_installer.py</pre>
-</div>
+ 
 
 <div class="section" id="collect_editing_candidates.py">
 <h2>collect_editing_candidates.py<a class="headerlink" href="#collect_editing_candidates.py"></a></h2>
@@ -1696,6 +1691,15 @@ chr21   47741221        A       0       49      36.33   [44, 0, 5, 0]   AG      
 <div class="highlight-python"><pre>python collect_editing_candidates.py</pre>
 This scripts will create the editingStats.txt file (available at <href>https://github.com/BioinfoUNIBA/REDItools/tree/master/NPfiles)</href> including the fraction of detected substitutions.
 </div>
+  
+<div class="section" id="conda_pckgs_installer.py">
+<h2>conda_pckgs_installer.py<a class="headerlink" href="#conda_pckgs_installer.py"></a></h2>
+<p>Conda_pckgs_installer.py checks in an interactive way the user's machine for Conda environment and all packages 
+  required by the protocol. If something is wrong it solves the missing dependencies</p>
+<p>Example:</p>
+<div class="highlight-python"><pre>python conda_pckgs_installer.py</pre>
+</div>
+
 
 <div class="section" id="download-prepare-data-NP.py">
 <h2>download-prepare-data-NP.py<a class="headerlink" href="#download-prepare-data-NP.py"></a></h2>
