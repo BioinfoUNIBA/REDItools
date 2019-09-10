@@ -132,13 +132,14 @@ cwd = filter(os.path.isdir, os.listdir(os.getcwd()))
 all_available_sites = []
 sample_edited_sites = {}
 for directory in cwd:
-    path = list(os.walk(directory + '/editing/'))
-    table = path[1][0] + '/' + path[1][-1][-1] 
-    with open(table,'r') as a:
-        for line in a:
-            if line.startswith('chr'):
-                s = map(str.strip, line.split("\t"))
-		if s[7] == 'AG':
+    if directory.startswith('SRR'):
+        path = list(os.walk(directory + '/editing/'))
+        table = path[1][0] + '/' + path[1][-1][-1] 
+        with open(table,'r') as a:
+            for line in a:
+                if line.startswith('chr'):
+                    s = map(str.strip, line.split("\t"))
+		    if s[7] == 'AG':
 	                site, freq, coverage = s[0] + "_" + s[1], s[8], s[4]
 			freq_gnum_cov = '%s^%s^%s' %(s[8],eval(s[6])[2],s[4]) 
 			if site not in all_available_sites: all_available_sites.append(site)
