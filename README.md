@@ -55,7 +55,7 @@
       <li><a class="reference internal" href="#collect_editing_candidates.py">collect_editing_candidates.py</a></li>
       <li><a class="reference internal" href="#conda_pckgs_installer.py">conda_pckgs_installer.py</a></li>
       <li><a class="reference internal" href="#download_prepare_data_NP.py">download_prepare_data_NP.py</a></li>
-      <li><a class="reference internal" href="#">get_Statistics.py</a></li>      
+      <li><a class="reference internal" href="#get_Statistics.py">get_Statistics.py</a></li>      
 </ul>
 
 
@@ -1714,6 +1714,16 @@ where:
   <li> [use paths 0/1] is a flag to use (1) or not (0) a file with absolute paths to requested programs;</li>
   </ul>
 <p class="text-justify"><u>Note.</u> If [use paths 0/1] is set to 0 and above software has been correctly installed, paths to requested programs will be automatically checked.</p>
+  
+<div class="section" id="get_Statistics.py">
+<h2>get_Statistics.py<a class="headerlink" href="#get_Statistics.py"></a></h2>
+<p>Get_Statistics.py inspects the distribution of RNA variants in filtered Reditools outTables.</p>
+<p>Example:</p>
+<div class="highlight-python">
+  <pre>python conda_pckgs_installer.py</pre>
+<p class="text-justify">This scripts creates the editingStats.txt file (available for chr4 in NA12878 cell line at https://github.com/BioinfoUNIBA/REDItools/tree/master/NPfiles) including the fraction of detected substitutions.</p>
+</div>  
+
 <div class="section" id="contact">
 <h1>Contact<a class="headerlink" href="#contact" title="Permalink to this headline"></a></h1>
 <ul class="simple">
