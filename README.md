@@ -1679,12 +1679,6 @@ chr21   47741221        A       0       49      36.33   [44, 0, 5, 0]   AG      
 </div>
 </div>
 </div>
-<div class="section" id="contact">
-<h1>Contact<a class="headerlink" href="#contact" title="Permalink to this headline"></a></h1>
-<ul class="simple">
-<li><strong>Ernesto Picardi</strong>: ernesto.picardi@gmail.com</li>
-</ul>
-</div>
 <div class="section" id="Nature Protocol Scripts">
 <h1>Nature Protocol Scripts<a class="headerlink" href="#Nature Protocol Scripts"></a></h1>
 <div class="section" id="conda_pckgs_installer.py">
@@ -1706,6 +1700,12 @@ chr21   47741221        A       0       49      36.33   [44, 0, 5, 0]   AG      
   <li> [use paths 0/1] is a flag to use (1) or not (0) a file with absolute paths to requested programs;</li>
   <li> if [use paths 0/1] is set to 0 and above software has been correctly installed, paths to requested programs will be    automatically checked.</li>
 </ul>
+<div class="section" id="contact">
+<h1>Contact<a class="headerlink" href="#contact" title="Permalink to this headline"></a></h1>
+<ul class="simple">
+<li><strong>Ernesto Picardi</strong>: ernesto.picardi@gmail.com</li>
+</ul>
+</div>
 </div>
 </div>
 </div>
