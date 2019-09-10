@@ -1,18 +1,18 @@
 #################################### REDI OUT TABLE ########################################################
-#Region	Position	Reference	Strand	Coverage-q30	MeanQ	BaseCount[A,C,G,T]\	   	   #
+#Region		Position	Reference	Strand	Coverage-q30	MeanQ	BaseCount[A,C,G,T]	   #
 #AllSubs	Frequency	gCoverage-q30	gMeanQ	gBaseCount[A,C,G,T]	gAllSubs	gFrequency #
 ############################################################################################################
 
-###################################GET_DE_events_table######################################################
-#SITES	SRR3306830_CTRL	SRR3306831_CTRL	SRR3306832_CTRL	SRR3306833_CTRL	SRR3306834_CTRL	SRR3306835_CTRL\   #
-#SRR3306836_CTRL	SRR3306823_DIS	SRR3306824_DIS	SRR3306825_DIS	SRR3306826_DIS	SRR3306827_DIS\    #
-#SRR3306828_DIS	SRR3306829_DIS	[num_controls/num_disease]	delta_diff	pvalue (Mannwhitney)       #
-############################################################################################################
+###################################GET_DE_events_table###########################################################
+#chromosome	position	type_editing	SRR3306830_CTRL		SRR3306831_CTRL		SRR3306832_CTRL #	
+#SRR3306833_CTRL	SRR3306834_CTRL	SRR3306835_CTRL   SRR3306836_CTRL	SRR3306823_DIS	SRR3306824_DIS	#
+#SRR3306825_DIS	SRR3306826_DIS	SRR3306827_DIS	SRR3306828_DIS	SRR3306829_DIS	[num_controls/num_disease]	#
+#delta_diff	pvalue (Mannwhitney)       									#
+#################################################################################################################
 
 import os, sys, argparse
 from scipy import stats
 import numpy as np
-#from statsmodels.sandbox.stats.multicomp import multipletests
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-c", action = 'store', dest = 'min_coverage', 
@@ -170,7 +170,6 @@ if enable_linear_model:
                 row_b = map(tuple_replace_bis, row)
                 row_b = row_b[0].split('_') + row_b[2:]
                 row_b.insert(2, 'A.to.G')
-                #print '\t'.join(map(str,row_b))
 		final_list = row_b[:-1]
                 print '\t'.join(map(str,final_list))
 		outtable += '\t'.join(map(str,final_list)).replace('-','NA')
@@ -185,17 +184,13 @@ if enable_linear_model:
 	os.system(cmd)
 
 else:
-
-	#header = ['SITES'] + controls + disease + ['[num_controls/num_disease]'] + ['delta_diff'] + ['pvalue (Mannwhitney)'] 
-
 	header = ['chromosome', 'position', 'type_editing'] + controls + disease + ['[num_controls/num_disease]'] + ['delta_diff'] + ['pvalue (Mannwhitney)']
 
 	if pvalue_correction == 1:
 		header += ['pvalue Bonferroni corrected']
 	if pvalue_correction == 2:
 		header += ['pvalue BH corrected']
-	
-	
+		
 	print '\t'.join(header)
 	
 	for chrom in sorted(all_available_sites, key = lambda x: Set_Chr_Nr(x)):
@@ -211,7 +206,6 @@ else:
 			ctrls_mean = sum(map(float, filter(lambda x: x!= '-', ctrls_freq)))/len(filter(lambda x: x!= '-', ctrls_freq))
 	                dss_mean = sum(map(float, filter(lambda x: x!= '-', dss_freq)))/len(filter(lambda x : x!= '-', dss_freq))
 			delta_diff =  abs(ctrls_mean - dss_mean)
-			#pvalue=stats.mannwhitneyu(ctrls,dss, alternative='two-sided')
 			pvalue=stats.mannwhitneyu(ctrls_freq, dss_freq, alternative='two-sided')
 			row.append(round(delta_diff, 3))
 			row.append(str(round(pvalue[1], 3)))
@@ -233,8 +227,6 @@ else:
 		else:
 			row_b =  row_b[0].split('_') + row_b[2:]
 	                row_b.insert(2, 'A.to.G')
-	                #print '\t'.join(map(str,row))
-			#print '\t'.join(map(str,row))
 			print '\t'.join(map(str,row_b))
 
 
