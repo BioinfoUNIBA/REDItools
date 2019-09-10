@@ -28,7 +28,13 @@ optional arguments:
   -h, --help            show this help message and exit
   -c MIN_COVERAGE       Coverage-q30
   -cpval PVALUE_CORRECTION 1 --> Bonferroni correction / 2 --> Benjamini hochberg
-  -input_file SAMPLES_INFORMATIONS_FILE Comma separated file e.g: SRR3306830, Control, SRR3306829,Healthy...etc
+  -input_file SAMPLES_INFORMATIONS_FILE Comma separated file e.g: 
+  <pre>Sample,Status
+       SRR3306823,DIS
+       SRR3306824,DIS
+       SRR3306830,CTRL
+       SRR3306831,CTRL..
+  </pre>
   -f MIN_EDIT_FREQUENCY Editing Frequency
   -mts MIN_SAMPLE_TESTING min percentage of each sample category
   -sig ONLY_SIGNIFICANT Return only significant editing events (only if -cpval flag is activated)
