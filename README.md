@@ -1712,8 +1712,8 @@ where:
   <li> “rna_editing_protocol” is the main folder in which all data will be downloaded;</li>
   <li> [REDItools folder] is the absolute path to REDItools folder;</li>
   <li> [use paths 0/1] is a flag to use (1) or not (0) a file with absolute paths to requested programs;</li>
-  <b>Note</b> If [use paths 0/1] is set to 0 and above software has been correctly installed, paths to requested programs will be automatically checked.</li>
-</ul>
+  </ul>
+  <u>Note.</u> If [use paths 0/1] is set to 0 and above software has been correctly installed, paths to requested programs will be automatically checked.</li>
 <div class="section" id="contact">
 <h1>Contact<a class="headerlink" href="#contact" title="Permalink to this headline"></a></h1>
 <ul class="simple">
