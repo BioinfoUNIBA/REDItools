@@ -54,7 +54,7 @@
     <ul>
       <li><a class="reference internal" href="#collect_editing_candidates.py">collect_editing_candidates.py</a></li>
       <li><a class="reference internal" href="#conda_pckgs_installer.py">conda_pckgs_installer.py</a></li>
-      <li><a class="reference internal" href="#download-prepare-data-NP.py">download-prepare-data-NPpy</a></li>
+      <li><a class="reference internal" href="#download_prepare_data_NP.py">download_prepare_data_NP.py</a></li>
       <li><a class="reference internal" href="#">get_Statistics.py</a></li>      
 </ul>
 
@@ -1688,8 +1688,9 @@ chr21   47741221        A       0       49      36.33   [44, 0, 5, 0]   AG      
 <h2>collect_editing_candidates.py<a class="headerlink" href="#collect_editing_candidates.py"></a></h2>
 <p>It collects filtered ALU, REP NON ALU and NON REP sites and provides the final list of RNA editing candidates.</p>
 <p>Example:</p>
-<div class="highlight-python"><pre>python collect_editing_candidates.py</pre>
-This scripts will create the editingStats.txt file (available at <href>https://github.com/BioinfoUNIBA/REDItools/tree/master/NPfiles)</href> including the fraction of detected substitutions.
+<div class="highlight-python">
+  <pre>python collect_editing_candidates.py $ sort -k1,1 -k2,2n editing.txt>editing_sorted.txt</pre>
+The editing_sorted.txt file contains the list of RNA editing candidates sorted by chromosome number and position. The full content for chr4 in NA12878 cell line is available online at https://github.com/BioinfoUNIBA/REDItools/tree/master/NPfiles. 
 </div>
   
 <div class="section" id="conda_pckgs_installer.py">
@@ -1711,7 +1712,7 @@ where:
   <li> “rna_editing_protocol” is the main folder in which all data will be downloaded;</li>
   <li> [REDItools folder] is the absolute path to REDItools folder;</li>
   <li> [use paths 0/1] is a flag to use (1) or not (0) a file with absolute paths to requested programs;</li>
-  <li> if [use paths 0/1] is set to 0 and above software has been correctly installed, paths to requested programs will be    automatically checked.</li>
+  <b>Note</b> If [use paths 0/1] is set to 0 and above software has been correctly installed, paths to requested programs will be automatically checked.</li>
 </ul>
 <div class="section" id="contact">
 <h1>Contact<a class="headerlink" href="#contact" title="Permalink to this headline"></a></h1>
