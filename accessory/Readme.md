@@ -13,11 +13,33 @@ For control case studies by launching the get_DE_events.py script the user can f
 <ul>
 <li>RNAseq coverage per position (default <b>10 reads</b>)</li>
 <li>Minimum editing frequency per position (default <b>10%</b>)</li>
-For each editing candidate, the script applies the Mann–Whitne<b>y test to check the significance between the two conditions, 
+For each editing candidate, the script applies the Mann–Whitney test to check the significance between the two conditions, 
 control and HD. By default the test is carried out only if the number of editing events per position is equal to 50% of the samples per group. 
 Optionally, p-values can be corrected using Benjamini–Hochberg or Bonferroni tests. 
 <ul>
-<p>Usage:</p>
-<pre><pre>
+<p>Usage:</p> 
+<pre>
+get_DE_events.py [-h] [-c MIN_COVERAGE] [-cpval PVALUE_CORRECTION]
+                        [-input_file SAMPLES_INFORMATIONS_FILE]
+                        [-f MIN_EDIT_FREQUENCY] [-mts MIN_SAMPLE_TESTING]
+                        [-sig ONLY_SIGNIFICANT] [-linear]
+  
+optional arguments:
+  -h, --help            show this help message and exit
+  -c MIN_COVERAGE       Coverage-q30
+  -cpval PVALUE_CORRECTION
+                        1 --> Bonferroni correction / 2 --> Benjamini hochberg
+  -input_file SAMPLES_INFORMATIONS_FILE
+                        Comma separated file e.g: SRR3306830,Control
+                        SRR3306829,Healthy...etc
+  -f MIN_EDIT_FREQUENCY
+                        Editing Frequency
+  -mts MIN_SAMPLE_TESTING
+                        min percentage of each sample category
+  -sig ONLY_SIGNIFICANT
+                        Return only significant editing events
+  -linear               Enable linear model
+
+</pre>
 </body>
 </html>
