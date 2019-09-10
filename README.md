@@ -1720,7 +1720,7 @@ where:
 <p>Get_Statistics.py inspects the distribution of RNA variants in filtered Reditools outTables.</p>
 <p>Example:</p>
 <div class="highlight-python">
-  <pre>python conda_pckgs_installer.py</pre>
+  <pre>python get_Statistics.py</pre>
 <p class="text-justify">This scripts creates the editingStats.txt file (available for chr4 in NA12878 cell line at https://github.com/BioinfoUNIBA/REDItools/tree/master/NPfiles) including the fraction of detected substitutions.</p>
 </div>  
 
@@ -1733,6 +1733,7 @@ where:
 </div>
 </div>
 </div>
+<br>
 <a href="#">Go to top of page</a>
   </body>
 </html>
