@@ -32,11 +32,12 @@ optional arguments:
   -f MIN_EDIT_FREQUENCY                  Editing Frequency
   -mts MIN_SAMPLE_TESTING                min percentage of each sample category
   -sig ONLY_SIGNIFICANT                  Return only significant editing events (if -cpval flag is activated)
-  -linear                                Calculate differential RNA editing using the methodology by <a href="https://www.nature.com/articles/s41593-018-0287-x"> Tran et al. (2019)</a>
+  -linear                                Calculate differential RNA editing using the methodology by <br>
+                                         <a href="https://www.nature.com/articles/s41593-018-0287-x"> Tran et al. (2019)</a>
 
 <b>e.g.</b> python ../REDItools/accessory/get_DE_events.py-cpval 2 -input  sample_information.csv -sig yes
-The script will filter REDItoolDnaRna.py outputs for each sample contained in the SAMPLES_INFORMATIONS_FILE <br>
-returning only significant editing events (pval <= 0.05) in accordance with Benjamini hochberg correction.
+<p class-text="justify">The script will filter REDItoolDnaRna.py outputs for each sample contained in the 
+SAMPLES_INFORMATIONS_FILE <br> returning only significant editing events (pval <= 0.05) in accordance with Benjamini hochberg correction.</p>
 
 </pre>
 </body>
