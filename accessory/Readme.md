@@ -30,15 +30,14 @@ optional arguments:
   -cpval PVALUE_CORRECTION
                         1 --> Bonferroni correction / 2 --> Benjamini hochberg
   -input_file SAMPLES_INFORMATIONS_FILE
-                        Comma separated file e.g: SRR3306830,Control
-                        SRR3306829,Healthy...etc
+                        Comma separated file e.g: SRR3306830, Control, SRR3306829,Healthy...etc
   -f MIN_EDIT_FREQUENCY
                         Editing Frequency
   -mts MIN_SAMPLE_TESTING
                         min percentage of each sample category
   -sig ONLY_SIGNIFICANT
                         Return only significant editing events
-  -linear               Enable linear model
+  -linear               Calculate differential RNA editing using the methodology by <a href="https://www.nature.com/articles/s41593-018-0287-x"> Tran et al. (2019)</a>
 
 <b>e.g.</b> python ../REDItools/accessory/get_DE_events.py-cpval 2 -input  sample_information.csv -sig yes
 
