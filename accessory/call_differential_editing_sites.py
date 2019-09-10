@@ -176,7 +176,7 @@ stats_table['stable_prevalence_effect_size'] = pd.DataFrame(stable_prevalence_ef
 full_table = pd.concat([header_info, stats_table, editing_table[all_people]], axis=1)
 
 #write the full_table to output
-full_table.to_csv(output_file, sep='\t')
+full_table.to_csv(output_file, sep='\t', index=False)
 
 print "job completed\n"
 
