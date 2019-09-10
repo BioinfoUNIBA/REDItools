@@ -171,7 +171,7 @@ if enable_linear_model:
                 row_b = row_b[0].split('_') + row_b[2:]
                 row_b.insert(2, 'A.to.G')
 		final_list = row_b[:-1]
-                #print '\t'.join(map(str,final_list))
+                print '\t'.join(map(str,final_list))
 		outtable += '\t'.join(map(str,final_list)).replace('-','NA')
 		outtable += '\n'
 
@@ -183,7 +183,7 @@ if enable_linear_model:
 	cmd = 'python ./call_differential_editing_sites.py -input_file ' + samples_informations_file
 	os.system(cmd)
 
-else:
+if not enable_linear_model:
 	header = ['chromosome', 'position', 'type_editing'] + controls + disease + ['[num_controls/num_disease]'] + ['delta_diff'] + ['pvalue (Mannwhitney)']
 
 	if pvalue_correction == 1:
