@@ -1690,7 +1690,7 @@ chr21   47741221        A       0       49      36.33   [44, 0, 5, 0]   AG      
 <p>Example:</p>
 <div class="highlight-python">
   <pre>python collect_editing_candidates.py $ sort -k1,1 -k2,2n editing.txt>editing_sorted.txt</pre>
-<p class="text-justify"> The editing_sorted.txt file contains the list of RNA editing candidates sorted by chromosome number and position. The full content for chr4 in NA12878 cell line is available online at https://github.com/BioinfoUNIBA/REDItools/tree/master/NPfiles.</p>
+<p class="text-justify"> The editing_sorted.txt file contains the list of RNA editing candidates sorted by chromosome number and position. <br>The full content for chr4 in NA12878 cell line is available online at https://github.com/BioinfoUNIBA/REDItools/tree/master/NPfiles.</p>
 </div>
   
 <div class="section" id="conda_pckgs_installer.py">
