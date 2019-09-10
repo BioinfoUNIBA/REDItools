@@ -1688,12 +1688,21 @@ chr21   47741221        A       0       49      36.33   [44, 0, 5, 0]   AG      
 <p>Example:</p>
 <div class="highlight-python"><pre>python conda_pckgs_installer.py</pre>
 </div>
+
+<div class="section" id="collect_editing_candidates.py">
+<h2>collect_editing_candidates.py<a class="headerlink" href="#collect_editing_candidates.py"></a></h2>
+<p>It collects filtered ALU, REP NON ALU and NON REP sites and provides the final list of RNA editing candidates.</p>
+<p>Example:</p>
+<div class="highlight-python"><pre>python collect_editing_candidates.py</pre>
+This scripts will create the editingStats.txt file (available at <href>https://github.com/BioinfoUNIBA/REDItools/tree/master/NPfiles)</href> including the fraction of detected substitutions.
+</div>
+
 <div class="section" id="download-prepare-data-NP.py">
 <h2>download-prepare-data-NP.py<a class="headerlink" href="#download-prepare-data-NP.py"></a></h2>
 <p>For novice users, we provide a python script, named download-prepare-data-NP.py, to automatically download and prepare all required files.</p>
 <p>Example:</p>
 <div class="highlight-python"><pre>python download-prepare-data-NP.py rna_editing_protocol [REDItools folder] [use paths 0/1]</pre>
-<b>where:</b>
+where:
 <ul>
   <li> “rna_editing_protocol” is the main folder in which all data will be downloaded;</li>
   <li> [REDItools folder] is the absolute path to REDItools folder;</li>
