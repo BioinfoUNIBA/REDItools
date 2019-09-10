@@ -16,7 +16,7 @@ For control case studies by launching the get_DE_events.py script the user can f
 For each editing candidate, the script applies the Mann–Whitney test to check the significance between the two conditions, 
 control and HD. By default the test is carried out only if the number of editing events per position is equal to 50% of the samples per group. 
 Optionally, p-values can be corrected using Benjamini–Hochberg or Bonferroni tests. 
-<ul>
+</ul>
 <p>Usage:</p> 
 <pre>
 get_DE_events.py [-h] [-c MIN_COVERAGE] [-cpval PVALUE_CORRECTION]
@@ -39,6 +39,8 @@ optional arguments:
   -sig ONLY_SIGNIFICANT
                         Return only significant editing events
   -linear               Enable linear model
+
+<b>e.g.</b> python ../REDItools/accessory/get_DE_events.py-cpval 2 -input  sample_information.csv -sig yes
 
 </pre>
 </body>
