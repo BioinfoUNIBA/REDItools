@@ -5,6 +5,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
   </head>
   <body>
+<div class="section" id="reditools-python-scripts-for-rna-editing-detection-by-rna-seq-data">
+<h1>REDItools: python scripts for RNA editing detection by RNA-Seq data<a class="headerlink" title="Permalink to this headline"></a></h1>
+</div>    
   <h3><a>Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#introduction">Introduction</a></li>
@@ -64,9 +67,7 @@
 <ul class="simple">
 </ul>
 </div>
-<div class="section" id="reditools-python-scripts-for-rna-editing-detection-by-rna-seq-data">
-<h1>REDItools: python scripts for RNA editing detection by RNA-Seq data<a class="headerlink" title="Permalink to this headline"></a></h1>
-</div>
+
 <div class="section" id="introduction">
 <h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline"></a></h1>
 <p>REDItools are python scripts developed with the aim to study RNA editing at genomic scale
