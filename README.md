@@ -150,7 +150,7 @@ platform in the standard BAM format and implement a variety of filters.</p>
 <div class="section" id="download-testing-dataset">
 <h2>Download testing dataset<a class="headerlink" href="#download-testing-dataset" title="Permalink to this headline"></a></h2>
 <ul class="simple">
-<li><a class="reference external" href="http://srv00.recas.ba.infn.it/reditools/data/testREDItools.tar.gz">testREDItools.tar.gz</a></li>
+<li><a class="reference external" href="http://srv00.recas.ba.infn.it/webshare/testREDItools.tar.gz">testREDItools.tar.gz</a></li>
 </ul>
 </div>
 </div>
