@@ -384,8 +384,8 @@ def createFasta(chr,inblat,infoblat,chrbam,fastafile,rgfile):
 				ref=fasta.fetch(chr,pileupcolumn.pos,pileupcolumn.pos+1).upper()
 				#print pileupcolumn.pos+1,ref
 				for pileupread in pileupcolumn.pileups:
-					if ord(pileupread.alignment.qual[pileupread.qpos])-QVAL >= MQUAL and pileupcolumn.pos in pileupread.alignment.positions:
-						seq=pileupread.alignment.seq[pileupread.qpos].upper()
+					if ord(pileupread.alignment.qual[pileupread.query_position_or_next])-QVAL >= MQUAL and pileupcolumn.pos in pileupread.alignment.positions:
+						seq=pileupread.alignment.seq[pileupread.query_position_or_next].upper()
 						if ref!=seq: #substitution
 							rt=0
 							if pileupread.alignment.is_read1: rt=1
@@ -403,8 +403,8 @@ def createFasta(chr,inblat,infoblat,chrbam,fastafile,rgfile):
 		for pileupcolumn in bam.pileup(chr):
 			ref=fasta.fetch(chr,pileupcolumn.pos,pileupcolumn.pos+1).upper()
 			for pileupread in pileupcolumn.pileups:
-				if ord(pileupread.alignment.qual[pileupread.qpos])-QVAL >= MQUAL and pileupcolumn.pos in pileupread.alignment.positions:
-					seq=pileupread.alignment.seq[pileupread.qpos].upper()
+				if ord(pileupread.alignment.qual[pileupread.query_position_or_next])-QVAL >= MQUAL and pileupcolumn.pos in pileupread.alignment.positions:
+					seq=pileupread.alignment.seq[pileupread.query_position_or_next].upper()
 					if ref!=seq: #substitution
 						rt=0
 						if pileupread.alignment.is_read1: rt=1
