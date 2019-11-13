@@ -33,7 +33,7 @@ optional arguments:
   -mts MIN_SAMPLE_TESTING                min percentage of each sample category
   -sig ONLY_SIGNIFICANT                  Return only significant editing events 
                                          (if -cpval flag is activated)
-  -linear                                Calculate differential RNA editing accordint to Tran et al. (2019)
+  -linear                                Calculate differential RNA editing according to Tran et al. (2019)
                                                                                         
 <b>e.g.</b> python ../REDItools/accessory/get_DE_events.py -cpval 2 -input_file  sample_information.csv -sig yes
 <p class-text="justify">The script will filter REDItoolDnaRna.py outputs for each sample contained in the 
