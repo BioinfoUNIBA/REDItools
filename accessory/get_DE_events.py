@@ -44,7 +44,7 @@ enable_linear_model = args.linear
 
 if args.samples_informations_file == 'empty':
 	parser.error('sample_informations_file is MISSING!' + '\n' + \
-	'Please type "python reditools_output_parser.py -h" for more details on usage of this script')
+	'Please type "python get_DE_events.py -h" for more details on usage of this script')
 
 
 def call_differential_editing_sites(config_file):
