@@ -61,8 +61,8 @@ else:
         os.system(cmd + ' config --add channels conda-forge')
         os.system(cmd + ' create -n nature_protocol python=2.7 anaconda')
         install_conda_packages(cmd)
-	print("Your conda environment has been succesfully created, now close your terminal and open a new one." + "\n" + \
-	      "Type in order:" + "\n" + \
-	      "source " + home_folder + "/.bashrc" + "\n" + \
-	      "conda activate nature_protocol")
+        print("Your conda environment has been succesfully created, now close your terminal and open a new one." + "\n" + 
+		"Type in order:" + "\n" + \
+		"source " + home_folder + "/.bashrc" + "\n" + \
+		"conda activate nature_protocol")
 
