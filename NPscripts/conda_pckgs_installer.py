@@ -50,9 +50,9 @@ if commands.getstatusoutput('conda')[0] != 0:
 	os.system(cmd + ' create -n nature_protocol python=2.7 anaconda')
 	install_conda_packages(cmd)
 	print("Your conda environment has been succesfully created, now close your terminal and open a new one." + "\n" + \
-        "Type in order:" + "\n" + \
-        "source " + home_folder + "/.bashrc" + "\n" + \
-        "conda activate nature_protocol")
+	      "Type in order:" + "\n" + \
+	      "source " + home_folder + "/.bashrc" + "\n" + \
+	      "conda activate nature_protocol")
 else:
         home_folder = os.path.expanduser('~')
         cmd = home_folder + '/miniconda2/bin/conda'
@@ -62,7 +62,7 @@ else:
         os.system(cmd + ' create -n nature_protocol python=2.7 anaconda')
         install_conda_packages(cmd)
 	print("Your conda environment has been succesfully created, now close your terminal and open a new one." + "\n" + \
-        "Type in order:" + "\n" + \
-        "source " + home_folder + "/.bashrc" + "\n" + \
-        "conda activate nature_protocol")
+	      "Type in order:" + "\n" + \
+	      "source " + home_folder + "/.bashrc" + "\n" + \
+	      "conda activate nature_protocol")
 
