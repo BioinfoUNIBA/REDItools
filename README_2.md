@@ -3,7 +3,9 @@
 **REDItools2** is the optimized, parallel multi-node version of [<i class="icon-link"></i> REDItools](https://github.com/BioinfoUNIBA/REDItools).
 
 REDItools takes in input a RNA-Seq (or DNA-Seq BAM) file and outputs a table of RNA-Seq editing events.  Here is an example of REDItools's output:
-<img src="https://drive.google.com/uc?id=1ilGzbUKe16rt0iNQV-NzjohOBkx1hNHC" widht="500px">
+<p align="center">
+<img src="./REDItools/Images/Fig1.png" width="500px">
+</p>
 
 The following image explains the high-level architecture.
 
