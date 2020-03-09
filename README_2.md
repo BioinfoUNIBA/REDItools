@@ -331,7 +331,7 @@ This step will produce the output table (e.g., *dna_table.txt*);
 - Annotate the RNA-Seq table by means of the DNA-Seq table by running REDItools2.0 annotator (script *src/cineca/annotate_with_DNA.py*) with the two tables as input (e.g., *rna_table.txt* and *dna_table.txt*) which will produce the final annotated table (e.g., *final_table.txt*).
 
 <p align="center">
-<img src="src="Images/Fig2.png"" width="600px">
+<img src="Images/Fig4.png" width="600px">
 </p>
 
 When RNA-editing tables are big (e.g., greater than 1GB in gz format) reading the full table in parallel mode can be really a time-consuming task. In order to optimize the loading of target positions, we have provided a script to convert RNA-editing tables to BED files:
@@ -390,7 +390,7 @@ where TEMP_DIR is the directory you specified with the -t option; this directory
 Once created, the HTML page should display time information similar to the following:
 
 <p align="center">
-<img src="src="Images/Fig5.png"" width="600px">
+<img src="Images/Fig5.png" width="600px">
 </p>
 
 By means of this visualization you can *hover* on slices to see more in details the statistics for each interval computation as well as *zoom in* and *zoom out* by using the scroll wheel of your mouse.
