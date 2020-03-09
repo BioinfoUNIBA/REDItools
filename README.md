@@ -3,7 +3,7 @@ REDItools: python scripts for RNA editing detection by RNA-Seq data
 
 Introduction
 ============
-RNA editing is a post-transcriptional phenomenon
+<p align-text="justify"> RNA editing is a post-transcriptional phenomenon
 involving the insertion/deletion or substitution of specific bases in precise RNA localizations.
 In human, RNA editing occurs by deamination of cytosine to uridine (C-to-U) or mostly by the
 adenosine to inosine (A-to-I) conversion through ADAR enzymes. A-to-I substitutions may have
@@ -16,6 +16,8 @@ REDItools are simple python scripts conceived to facilitate the investigation of
 at large-scale and devoted to research groups that would to explore such phenomenon in own
 data but don’t have sufficient bioinformatics skills.
 They work on main operating systems (although unix/linux-based OS are preferred), can handle reads from whatever
-platform in the standard BAM format and implement a variety of filters.
+platform in the standard BAM format and implement a variety of filters.</p>
 
 <a href="https://github.com/BioinfoUNIBA/REDItools/blob/master/README_1.md">REDI1</a>
+<a href="https://github.com/BioinfoUNIBA/REDItools/blob/master/README_2.md">REDI1</a>
+
