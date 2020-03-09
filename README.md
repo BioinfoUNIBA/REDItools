@@ -3,8 +3,7 @@ REDItools: python scripts for RNA editing detection by RNA-Seq data
 
 Introduction
 ============
-REDItools are python scripts developed with the aim to study RNA editing at genomic scale
-by next generation sequencing data. RNA editing is a post-transcriptional phenomenon
+RNA editing is a post-transcriptional phenomenon
 involving the insertion/deletion or substitution of specific bases in precise RNA localizations.
 In human, RNA editing occurs by deamination of cytosine to uridine (C-to-U) or mostly by the
 adenosine to inosine (A-to-I) conversion through ADAR enzymes. A-to-I substitutions may have
@@ -19,3 +18,4 @@ data but don’t have sufficient bioinformatics skills.
 They work on main operating systems (although unix/linux-based OS are preferred), can handle reads from whatever
 platform in the standard BAM format and implement a variety of filters.
 
+<a href="https://github.com/BioinfoUNIBA/REDItools/blob/master/README_1.md">REDI1</a>
