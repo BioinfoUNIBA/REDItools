@@ -88,6 +88,11 @@ platform in the standard BAM format and implement a variety of filters.</p>
 <div class="section" id="publications">
 <h1>Publications<a class="headerlink" href="#publications" title="Permalink to this headline"></a></h1>
 <ul>
+<li><p class="first"><em>Lo Giudice C, Tangaro MA, Pesole G</em></p>
+<p><strong>Investigating RNA editing in deep transcriptome datasets with REDItools and REDIportal.</strong></p>
+<p><em>Nat Protoc 15, 1098–1131 (2020)</em></p>
+<p>PubMed PMID: <a class="reference external" href="https://www.ncbi.nlm.nih.gov/pubmed/31996844">31996844</a></p>
+</li>    
 <li><p class="first"><em>Diroma MA, Ciaccia L, Pesole G and Picardi E</em></p>
 <p><strong>Elucidating the editome: bioinformatics approaches for RNA editing detection.</strong></p>
 <p><em>Brief Bioinform. 2019;20(2):436-447</em></p>
