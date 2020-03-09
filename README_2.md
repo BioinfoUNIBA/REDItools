@@ -15,7 +15,9 @@ The following image explains the high-level architecture.
 
 This version of REDItools shows an average 8x speed improvement over the previous version even when using only the serial-mode:
 
-![enter image description here](https://drive.google.com/uc?id=11jlXSCTeFaTSqOyRC66FaVyON1YfrhpH)
+<p align="center">
+<img src="Images/Fig3.png" width="500px">
+</p>
 
 # Index
 
