@@ -21,4 +21,4 @@ platform in the standard BAM format and implement a variety of filters.</p>
 <a href="https://github.com/BioinfoUNIBA/REDItools/blob/master/README_1.md">REDItools V1 manual</a>
 <br>
 <a href="https://github.com/BioinfoUNIBA/REDItools/blob/master/README_2.md">REDItools V2 manual</a>
-<p><b>Note. </b>REDItools V2 is the latest optimized, parallel multi-node version of REDItools</p>
+<p><b>Note. </b>REDItools V2 is the latest optimized, parallel multi-node version of REDItools.</p>
