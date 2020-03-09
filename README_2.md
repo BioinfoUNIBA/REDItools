@@ -4,19 +4,19 @@
 
 REDItools takes in input a RNA-Seq (or DNA-Seq BAM) file and outputs a table of RNA-Seq editing events.  Here is an example of REDItools's output:
 <p align="center">
-<img src="Images/Fig1.png" width="500px">
+<img src="Images/Fig1.png" width="auto">
 </p>
 
 The following image explains the high-level architecture.
 
 <p align="center">
-<img src="Images/Fig2.png" width="500px">
+<img src="Images/Fig2.png" width="auto">
 </p>
 
 This version of REDItools shows an average 8x speed improvement over the previous version even when using only the serial-mode:
 
 <p align="center">
-<img src="Images/Fig3.png" width="500px">
+<img src="Images/Fig3.png" width="auto">
 </p>
 
 # Index
