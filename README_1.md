@@ -46,6 +46,7 @@
 <li><a class="reference internal" href="#sortgff-py-new-in-version-1-0-3">SortGFF.py</a></li>
 <li><a class="reference internal" href="#gfftotabix-py-new-in-version-1-0-3">GFFtoTabix.py</a></li>
 <li><a class="reference internal" href="#tabletogff-py-new-in-version-1-0-3">TableToGFF.py</a></li>
+<li><a class="reference internal" href="https://github.com/BioinfoUNIBA/QEdit/blob/master/scripts/README.md">get_DE_events.py</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#usage-example">Usage Example</a><ul>
