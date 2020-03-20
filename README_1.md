@@ -94,6 +94,10 @@ platform in the standard BAM format and implement a variety of filters.</p>
 <p><em>Nat Protoc 15, 1098–1131 (2020)</em></p>
 <p>PubMed PMID: <a class="reference external" href="https://www.ncbi.nlm.nih.gov/pubmed/31996844">31996844</a></p>
 </li>    
+<li><p class="first"><em>Lo Giudice C, Silverstis DA, Roth SH, Eisenberg Eli, Pesole G, Gallo A and Picardi E</em></p>
+<p><strong>Quantifying RNA Editing in Deep Transcriptome Datasets.</strong></p>
+<p><em>Front Genet 11. 2020; https://doi.org/10.3389/fgene.2020.00194</em></p>
+</li>
 <li><p class="first"><em>Diroma MA, Ciaccia L, Pesole G and Picardi E</em></p>
 <p><strong>Elucidating the editome: bioinformatics approaches for RNA editing detection.</strong></p>
 <p><em>Brief Bioinform. 2019;20(2):436-447</em></p>
