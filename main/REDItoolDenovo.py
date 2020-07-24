@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # coding=utf-8
 # Copyright (c) 2013-2014 Ernesto Picardi <ernesto.picardi@uniba.it>
 #
