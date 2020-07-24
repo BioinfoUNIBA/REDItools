@@ -33,7 +33,7 @@ setup(name='REDItools',
           'Operating System :: POSIX',
           'Programming Language :: Python',
           ],
-	long_description=open('README').read(),
+	long_description=open('README_1.md').read(),
 	platforms=['Linux','Unix','MacOS']
 )
 
