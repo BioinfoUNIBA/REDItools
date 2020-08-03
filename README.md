@@ -22,5 +22,5 @@ platform in the standard BAM format and implement a variety of filters.</p>
 <br><br>
 <a href="https://github.com/BioinfoUNIBA/REDItools2">REDItools V2 manual</a>
 <p><b>Note. </b>REDItools V2 is the latest optimized, parallel multi-node version of REDItools.</p>
-<p><b>Important. </b>Reditool_DNA_RNA.py v1.3 available at <a href="https://github.com/BioinfoUNIBA/REDItools/blob/master/NPscripts/REDItoolDnaRnav13.py" download>this link </a></p>
+<p><b>Important. </b>Reditool_DNA_RNA.py v1.3 available at <a href="https://raw.githubusercontent.com/BioinfoUNIBA/REDItools/master/NPscripts/REDItoolDnaRnav13.py" download>this link </a></p>
 
