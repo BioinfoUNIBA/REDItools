@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 #################################### REDI OUT TABLE ########################################################
 #Region		Position	Reference	Strand	Coverage-q30	MeanQ	BaseCount[A,C,G,T]	   #
 #AllSubs	Frequency	gCoverage-q30	gMeanQ	gBaseCount[A,C,G,T]	gAllSubs	gFrequency #
