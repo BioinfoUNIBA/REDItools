@@ -768,7 +768,7 @@ ridxinfo=pysam.idxstats(bamfile)
 for j in ridxinfo.split('\n'): #MOD
 	l=(j.strip()).split('\t')
 	if l[0] in ['*', '']: continue  #MOD
- 	if int(l[2])+int(l[3]) > 0: rrefs[l[0]]=int(l[1])
+	if int(l[2])+int(l[3]) > 0: rrefs[l[0]]=int(l[1])
 frefs=[]
 fidxinfo=open(fastafile+'.fai')
 for j in fidxinfo:
