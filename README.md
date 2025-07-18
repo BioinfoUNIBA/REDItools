@@ -26,3 +26,15 @@ platform in the standard BAM format, and implement various filters.</p>
 <p><b>Note. </b>REDItools V2 is useful for HPC environments.</p>
 </b>REDItools V3 is the latest optimized version for large-scale investigations.</p>
 <p><b>Important. </b>Reditool_DNA_RNA.py v1.3 available at <a href="/NPscripts/REDItoolDnaRnav13.py" download="REDItoolDnaRnav13.py">this link </a></p>
+
+
+Shield: [![CC BY-NC 4.0][cc-by-nc-shield]][cc-by-nc]
+
+This work is licensed under a
+[Creative Commons Attribution-NonCommercial 4.0 International License][cc-by-nc].
+
+[![CC BY-NC 4.0][cc-by-nc-image]][cc-by-nc]
+
+[cc-by-nc]: https://creativecommons.org/licenses/by-nc/4.0/
+[cc-by-nc-image]: https://licensebuttons.net/l/by-nc/4.0/88x31.png
+[cc-by-nc-shield]: https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg
